@@ -19,21 +19,21 @@ by a significant margin.
 ### Set-up
 Write the dataset path and save path in cfg.py. Data folder should be in the following format:
 Data
-    |video1
-          |frame1.jpg
-          |frame2.jpg
-          |frame3.jpg
-    |video2
-          |frame1.jpg
-          |........
+    video1
+          frame1.jpg
+          frame2.jpg
+          frame3.jpg
+    video2
+          frame1.jpg
+          ........
           
           
 ### Training
-Run the following command in order to train the model:
+Run the following command in order to train the model
 'python train.py'
 
 ### Testing
 We have followed similar strategy as G3AN for testing our model. Kindly, refer [G3AN repo](https://github.com/wyhsirius/g3an-project) for more info.
 
 ### Acknowlegment
-We want to thanks G3AN authors for releasing their code, this repo borrowed 
+We want to thanks G3AN authors for releasing their code, part of this repo is borrowed from [G3AN repo](https://github.com/wyhsirius/g3an-project).
