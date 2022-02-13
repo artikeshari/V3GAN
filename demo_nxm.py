@@ -30,7 +30,7 @@ def save_video_frames(path, vids, n_za, n_zm):
             v = vids[n_za*i + j].permute(0,2,3,1).cpu().numpy()
             v *= 255
             v = v.astype(np.uint8)                          #(16,64,64,3)
-            #skvideo.io.vwrite(os.path.join(path, "%d_%d.mp4"%(i, j)), v, outputdict={"-vcodec":"libx264"})
+            ##skvideo.io.vwrite(os.path.join(path, "%d_%d.mp4"%(i, j)), v, outputdict={"-vcodec":"libx264"})
             os.mkdir(os.path.join(path, "%d_%d"%(i, j)))
             for t in range(v.shape[0]):
                 filepath = os.path.join(os.path.join(path, "%d_%d"%(i, j)) + '/vid-%d.png' %(t))        
